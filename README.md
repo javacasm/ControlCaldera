@@ -1,10 +1,12 @@
 # Control remoto de Caldera
 
-Se trata de usar un NodeMCU (ESP8266 con ESP12E)
+Se trata de usar un NodeMCU (ESP8266 con ESP12E) para controlar la caldera
 
-## Sensores
 
-### Fase 1
+## Fase 1
+
+### Sensores
+
 * Sensor de humos  MQ2 en el analógico A0
 * Sensores de temperatura:
   * DS18x20 en tubo 1 de salida del agua caliente
@@ -12,13 +14,36 @@ Se trata de usar un NodeMCU (ESP8266 con ESP12E)
   * varios DS18x20 en el interior de la caldera
 * DHT22 junto a la caldera para medir temperatura y humedad
 
-### Fase 2
-* Sensor de luz para los leds de la caldera
+### Actuadores
 
-## Actuadores
-
-### Fase 1
 * Relé de encendido de la caldera
 
-### Fase 2
+### Acceso remoto
+
+* Podemos activar el relé de la caldera remotamente
+* Vemos los valores de los distintos sensores
+* Disponemos de un api REST para poder activar el relé de la caldera
+* Aplicación Android para activar/desactivar
+* Iconos con HTTP Widget para activar/deactivar ver estado
+
+
+## Fase 2
+
+### Sensores
+
+* Sensor de luz para los leds de la caldera
+* La centralita mide la temperatura en el interior de la vivienda
+
+### Acceso remoto
+
+* La centralita usa el api REST para activar/desactivar el relé en función de los datos de temperatura de los sensores
+
+### Actuadores
+
 * Relé para activar ventilador de humos
+
+### Fase 3
+
+### Sensores
+
+* Sensores de temperatura distribuidos por la casa reportan datos a la centralita
