@@ -7,6 +7,8 @@ Consta de 2 partes:
 * Una aplicación Android permite acceder remotamente.
 
 
+### montaje con ESP8266
+![montaje con ESP8266](./images/C7sW6teWkAEooAm.jpg)
 
 ## Fase 1
 
