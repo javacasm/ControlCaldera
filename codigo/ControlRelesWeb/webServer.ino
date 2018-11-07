@@ -7,9 +7,9 @@ ESP8266WebServer server(80);
 
 const char *form = "<center><form action='/'>"
 "<button name='dir' type='submit' value='1'>ON Rele 1</button>"
-"<button name='dir' type='submit' value='3'>ON Rele 2</button><br>"
+"<button name='dir' type='submit' value='3'>ON Indicador 2</button><br>"
 "<button name='dir' type='submit' value='2'>OFF Rele 1</button>"
-"<button name='dir' type='submit' value='4'>OFF Rele 2</button>"
+"<button name='dir' type='submit' value='4'>OFF Indicador 2</button>"
 "</form></center>";
 
 void handle_form()
