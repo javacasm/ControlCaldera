@@ -1,6 +1,6 @@
 
-#define RELE_1 D4
-#define RELE_2 D1
+#define RELE_1 D1
+#define RELE_2 D4
 
 
 void setup_reles();
