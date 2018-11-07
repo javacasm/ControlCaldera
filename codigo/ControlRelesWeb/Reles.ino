@@ -8,10 +8,14 @@ void setup_reles(){
 
 
 void apagaRele(int pinRele){
+    Serial.print(pinRele);
+    Serial.print(" Off");
+    
     digitalWrite(pinRele, LOW);
 }
 
 void enciendeRele(int pinRele){
+    Serial.print(pinRele);
+    Serial.print(" On");  
     digitalWrite(pinRele, HIGH);
 }
-
