@@ -1,14 +1,27 @@
 # Control remoto de Caldera
 
 El sistema permite controlar remotamente el encendido de una Caldera de Calefación
+
 Consta de 2 partes:
 
 * Un NodeMCU (ESP8266 con ESP12E) para controlar la caldera directamente y accesible por Wifi
 * Una aplicación Android permite acceder remotamente.
 
+## Fase 0
 
-### montaje con ESP8266
-![montaje con ESP8266](./images/C7sW6teWkAEooAm.jpg)
+* Wemos D1 
+* Rele
+* Pulsador para operar localmente
+* LED RGB para indicar funcionamiento
+* Alimentancion con cargador USB
+
+### Acceso remoto
+
+* Podemos activar el relé de la caldera remotamente
+* Disponemos de un api REST para poder activar el relé de la caldera
+* Iconos con HTTP Widget para activar/deactivar ver estado
+* Publicacion de datos en ThingSpeak
+
 
 ## Fase 1
 
@@ -55,8 +68,13 @@ Consta de 2 partes:
 
 ### Sensores
 
-* Sensores de temperatura distribuidos por la casa reportan datos a la centralita
+* Sensores de temperatura distribuidos por la casa reportan datos a la centralita usando MQTT
 
 ### Acceso remoto
 
 * Acceso desde internet
+
+## Recursos
+
+### montaje con ESP8266
+![montaje con ESP8266](./images/C7sW6teWkAEooAm.jpg)
